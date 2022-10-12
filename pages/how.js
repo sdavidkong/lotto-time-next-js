@@ -26,6 +26,9 @@ export default function Home() {
         <br></br>
         If you do not want to use real ETH to play, you can also play on the
         Goerli testnet! You can obtain some Goerli test ETH here.
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
     </div>
   );
