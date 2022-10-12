@@ -13,14 +13,16 @@ export default function Home() {
       </Head>
       <Header />
       <Menu />
-      <div>
+      <div className={styles.text}>
         This game works based on the rules of our verified smart contract, which
         can be viewed on etherscan!
+        <br></br>
         <br></br>
         You can enter by purchasing 1 entry for 0.01 ETH. After enough players
         have entered OR 1 week has passed, a winner is randomly selected.
         Because this game uses Chainlink VRF and automation, you can rest
         assured that the results are truly fair and no one can ever cheat!
+        <br></br>
         <br></br>
         If you don't want to use real ETH to play, you can also play on the
         Goerli testnet! You can obtain some Goerli test ETH here.
