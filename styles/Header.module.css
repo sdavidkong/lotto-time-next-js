@@ -1,6 +1,7 @@
 .png {
   width: 100%;
   display: flex;
+  position: absolute;
   top: 1.1rem;
   width: 25rem;
   padding-top: 1.7rem;
