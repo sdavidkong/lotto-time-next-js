@@ -111,11 +111,17 @@ const LotteryEntrance = () => {
           </div>
           <div>Number of Players: {numPlayers}</div>
           <div> Recent Winner: {recentWinner}</div>
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
       ) : (
         <div className={styles.text}>
           Raffle Smart Contract Not Detected on this Network, Please Switch to
           Mainnet or Goerli
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
       )}
     </div>
