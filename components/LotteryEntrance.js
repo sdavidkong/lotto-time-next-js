@@ -85,7 +85,7 @@ const LotteryEntrance = () => {
 
   return (
     <div>
-      Hi lottery entrant!
+      Lotto Time is a decentralized smart contract game on Ethereum!
       {raffleAddress ? (
         <div>
           <button
