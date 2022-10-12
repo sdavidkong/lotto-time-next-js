@@ -4,6 +4,7 @@ import { abi, contractAddress } from "../constants";
 import { ethers } from "ethers";
 import { useNotification } from "web3uikit";
 import { Bell } from "@web3uikit/icons";
+import styles from "../styles/Home.module.css";
 
 const LotteryEntrance = () => {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis();
@@ -85,9 +86,11 @@ const LotteryEntrance = () => {
 
   return (
     <div>
-      Lotto Time is a decentralized smart contract game on Ethereum!
+      <div className={styles.text}>
+        Lotto Time is a decentralized smart contract game on Ethereum!
+      </div>
       {raffleAddress ? (
-        <div>
+        <div className={styles.text}>
           <button
             onClick={async function () {
               await enterRaffle({
@@ -110,7 +113,7 @@ const LotteryEntrance = () => {
           <div> Recent Winner: {recentWinner}</div>
         </div>
       ) : (
-        <div>
+        <div className={styles.text}>
           Raffle Smart Contract Not Detected on this Network, Please Switch to
           Mainnet or Goerli
         </div>
