@@ -6,6 +6,7 @@
   width: 25rem;
   padding-top: 1.7rem;
   justify-content: center;
+  z-index: 1;
 }
 
 .header {
@@ -23,10 +24,6 @@
   height: 12rem;
 }
 
-.button {
-  display: flex;
-  justify-content: right;
-}
 .connectButtonDiv {
   padding-top: 2.5rem;
   padding-right: 3rem;
@@ -34,6 +31,8 @@
 .button {
   display: flex;
   justify-content: right;
+  position: relative;
+  z-index: 3;
 }
 
 @media screen and (max-width: 750px) {
