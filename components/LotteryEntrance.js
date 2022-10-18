@@ -4,7 +4,7 @@ import { abi, contractAddress } from "../constants";
 import { ethers } from "ethers";
 import { useNotification } from "web3uikit";
 import { Bell } from "@web3uikit/icons";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/How.module.css";
 
 const LotteryEntrance = () => {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis();
