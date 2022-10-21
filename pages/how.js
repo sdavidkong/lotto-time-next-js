@@ -14,13 +14,20 @@ export default function Home() {
       <Header />
       <Menu />
       <div className={styles.text}>
-        This game works based on the rules of our verified smart contract, which
-        can be viewed on etherscan!
+        This game works based on the rules of our smart contract, which can be
+        viewed on{" "}
+        <a href="https://goerli.etherscan.io/address/0x9fDfbf3C5F12dE43Ef118b9769516e82c1FA5E2d#internaltx">
+          etherscan
+        </a>{" "}
+        and{" "}
+        <a href="https://github.com/sdavidkong/SmartContractLottery/blob/master/contracts/Raffle.sol">
+          github!
+        </a>
         <br></br>
         <br></br>
-        You can enter by purchasing 1 entry for 0.01 ETH. After at least 1
-        player has entered, a winner is randomly selected after 1 minute.
-        Because this game uses{" "}
+        Entering the lotto costs 0.01 Goerli ETH. After at least 1 player has
+        entered, a winner is randomly selected using Chainlink VRF after 1
+        minute. Because this game uses{" "}
         <a href="https://docs.chain.link/docs/vrf/v2/introduction/">
           Chainlink VRF{" "}
         </a>
@@ -32,9 +39,8 @@ export default function Home() {
         ever cheat!
         <br></br>
         <br></br>
-        If you do not want to use real ETH to play, you can also play on the
-        Goerli testnet! You can obtain some Goerli test ETH here.
-        <br></br>
+        You can obtain some Goerli testnet ETH{" "}
+        <a href="https://goerlifaucet.com/"> here</a>.<br></br>
         <br></br>
         <br></br>
       </div>
