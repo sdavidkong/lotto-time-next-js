@@ -9,6 +9,7 @@ import styles from "../styles/How.module.css";
 const LotteryEntrance = () => {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis();
   const chainId = parseInt(chainIdHex);
+  console.log(`ChainId is ${chainId}`);
   const raffleAddress =
     chainId in contractAddress ? contractAddress[chainId][0] : null;
 
@@ -87,7 +88,8 @@ const LotteryEntrance = () => {
   return (
     <div>
       <div className={styles.text}>
-        Lotto Time is a decentralized smart contract game on Ethereum!
+        Lotto Time is a decentralized smart contract game on Ethereum's Goerli
+        Testnet!
       </div>
       {raffleAddress ? (
         <div className={styles.text}>
@@ -117,8 +119,8 @@ const LotteryEntrance = () => {
         </div>
       ) : (
         <div className={styles.text}>
-          Raffle Smart Contract Not Detected on this Network, Please Switch to
-          Mainnet or Goerli
+          Lotto Smart Contract Not Detected on this Network, Please Switch to
+          Goerli
           <br></br>
           <br></br>
           <br></br>
