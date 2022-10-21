@@ -7,7 +7,7 @@ import { Bell } from "@web3uikit/icons";
 import styles from "../styles/How.module.css";
 
 const introText = `Lotto Time is a decentralized smart contract game on Ethereum's
-Goerli Testnet!`;
+Goerli Testnet.`;
 
 const LotteryEntrance = () => {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis();
