@@ -119,8 +119,7 @@ const LotteryEntrance = () => {
         </div>
       ) : (
         <div className={styles.text}>
-          Lotto Smart Contract Not Detected on this Network, Please Switch to
-          Goerli
+          Please connect your wallet to Goerli Testnet to view the Lotto!
           <br></br>
           <br></br>
           <br></br>
