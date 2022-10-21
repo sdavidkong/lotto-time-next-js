@@ -112,7 +112,11 @@ const LotteryEntrance = () => {
             Entrance fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
           </div>
           <div>Number of Players: {numPlayers}</div>
-          <div> Recent Winner: {recentWinner}</div>
+          <div>
+            {" "}
+            Recent Winner: {recentWinner.slice(0, 6)} ...{" "}
+            {recentWinner.slice(recentWinner.length - 4)}
+          </div>
           <br></br>
           <br></br>
           <br></br>
