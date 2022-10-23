@@ -5,6 +5,7 @@ import { ethers } from "ethers";
 import { useNotification } from "web3uikit";
 import { Bell } from "@web3uikit/icons";
 import styles from "../styles/How.module.css";
+import { FaEthereum } from "react-icons/fa";
 
 const introText = `Lotto Time is a decentralized smart contract game on Ethereum's
 Goerli Testnet.`;
@@ -94,6 +95,7 @@ const LotteryEntrance = () => {
       {raffleAddress ? (
         <div className={styles.text}>
           <button
+            className={styles.enterButton}
             onClick={async function () {
               await enterRaffle({
                 onSuccess: handleSuccess,
@@ -102,13 +104,10 @@ const LotteryEntrance = () => {
             }}
             disabled={isLoading || isFetching}
           >
-            {isLoading || isFetching ? (
-              <div className="animate-spin spinner-border h-8 w-8 border-b-2 rounded-full"></div>
-            ) : (
-              "Enter Lotto"
-            )}
+            {isLoading || isFetching ? <FaEthereum /> : "Enter Lotto!"}
           </button>
           <div>
+            <br></br>
             Entrance fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
           </div>
           <div>Number of Players: {numPlayers}</div>
