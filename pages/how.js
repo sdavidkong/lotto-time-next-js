@@ -20,6 +20,7 @@ export default function Home() {
           className={styles.link}
           href="https://goerli.etherscan.io/address/0x9fDfbf3C5F12dE43Ef118b9769516e82c1FA5E2d#internaltx"
           target="_blank"
+          rel="noopener noreferrer"
         >
           etherscan
         </a>{" "}
@@ -28,6 +29,7 @@ export default function Home() {
           className={styles.link}
           target="_blank"
           href="https://github.com/sdavidkong/SmartContractLottery/blob/master/contracts/Raffle.sol"
+          rel="noopener noreferrer"
         >
           github!
         </a>
@@ -40,6 +42,7 @@ export default function Home() {
           className={styles.link}
           href="https://docs.chain.link/docs/vrf/v2/introduction/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Chainlink VRF{" "}
         </a>
@@ -48,6 +51,7 @@ export default function Home() {
           className={styles.link}
           href="https://docs.chain.link/docs/chainlink-automation/introduction/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           automation
         </a>
@@ -60,6 +64,7 @@ export default function Home() {
           className={styles.link}
           href="https://goerlifaucet.com/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           here
