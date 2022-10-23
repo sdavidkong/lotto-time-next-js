@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "../styles/How.module.css";
 import Header from "../components/Header";
 import LotteryEntrance from "../components/LotteryEntrance";
 import Menu from "../components/Menu";
@@ -14,6 +15,13 @@ export default function Home() {
       <Header />
       <Menu />
       <LotteryEntrance />
+      <div className={styles.ethlogodiv}>
+        <img
+          className={styles.ethlogo}
+          src="/Eth-rainbow.png"
+          alt="A colorful tilted eth logo!"
+        />
+      </div>
     </div>
   );
 }

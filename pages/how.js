@@ -42,7 +42,13 @@ export default function Home() {
         You can obtain some Goerli testnet ETH{" "}
         <a href="https://goerlifaucet.com/"> here</a>.<br></br>
         <br></br>
-        <br></br>
+      </div>
+      <div className={styles.ethlogodiv}>
+        <img
+          className={styles.ethlogo}
+          src="/Eth-rainbow.png"
+          alt="A colorful tilted eth logo!"
+        />
       </div>
     </div>
   );

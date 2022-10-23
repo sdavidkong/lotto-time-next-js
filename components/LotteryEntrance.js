@@ -119,12 +119,10 @@ const LotteryEntrance = () => {
           </div>
           <br></br>
           <br></br>
-          <br></br>
         </div>
       ) : (
         <div className={styles.text}>
           Please connect your wallet to Goerli Testnet to view the Lotto!
-          <br></br>
           <br></br>
           <br></br>
         </div>

@@ -6,6 +6,18 @@
   font-size: 1.3rem;
 }
 
+.ethlogo {
+  max-width: 100%;
+  transform: rotate(20deg);
+}
+
+.ethlogodiv {
+  width: 10rem;
+  float: right;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
 @media screen and (max-width: 750px) {
   .text {
     padding-left: 5rem;
